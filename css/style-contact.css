@@ -1,0 +1,73 @@
+/* CSS Style Sheet for Justin Morrow's CSD-340 Module 6.2 Assignment - 10/08/25 */
+/* CSS Assignment References: 
+	https://www.w3schools.com/css/
+	https://css-tricks.com/almanac/properties/b/box-shadow/
+	https://www.w3schools.com/css/css_website_layout.asp
+	https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+	https://www.w3schools.com/howto/howto_css_cards.asp
+	https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+	Note: Classes use (.) and IDs use (#)
+	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
+*/
+
+
+/* Default body color, size, spacing and font settings */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+}
+
+
+/* Sticky navbar to keep it visible when scrolling. The menu text items are aligned to the right */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #002244; /* College Navy */
+  border-top: 5px solid #69BE28; /* Action Green */
+  padding: 12px 24px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navigation Menu Bar Link Settings */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+
+/* Navigation Menu Bar Over/Highlight Settings */
+#navbar a:hover {
+  background-color: #A5ACAF; /* Wolf Grey */
+  text-decoration: underline;
+}
+
+
+/* Contact Page Footer Alignment Settings */
+.footer {
+  text-align: center;
+  padding: 200px;
+}
+
+
+/* Contact Page Email Button Seahawks Colors*/
+.email-button {
+  display: inline-block;
+  background-color: #002244; /* College Navy */
+  color: white;
+  border: 2px solid #69BE28; /* Action Green */
+  padding: 20px 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* Contact Page Email Button Hover Settings */
+.email-button:hover {
+  background-color: #69BE28; /* Action Green */
+}

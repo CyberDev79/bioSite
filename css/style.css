@@ -1,0 +1,99 @@
+/* CSS Style Sheet for Justin Morrow's CSD-340 Module 6.2 Assignment - 10/08/25 */
+/* CSS Assignment References: 
+	https://www.w3schools.com/css/
+	https://css-tricks.com/almanac/properties/b/box-shadow/
+	https://www.w3schools.com/css/css_website_layout.asp
+	https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+	https://www.w3schools.com/howto/howto_css_cards.asp
+	Note: Classes use (.) and IDs use (#)
+	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
+*/
+
+
+/* Default Body Color, Size, Spacing and Font Settings */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+}
+
+
+/* The Main Section of the Landing Page Width and Color Settings */
+.main-section {
+  width: 100%;
+  background-color: transparent;
+}
+
+
+/* Float Main Image to Left */
+.main-image {
+  float: left;
+  margin-right: 40px;
+}
+
+
+/* Main Text and Caption Alignment Settings */
+.main-text {
+  overflow: hidden;
+  padding-top: 300px;
+  padding-left: 200px
+}
+
+
+/* Main H1 Heading Text Style */
+.main-text h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Main H2 Sub-Heading Text Style */
+.main-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #A5ACAF; /* Wolf Grey */
+  margin-bottom: 10px;
+}
+
+
+/* Main H3 Caption Text Style */
+.main-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #002244; /* College Navy */
+  margin-bottom: 10px;
+}
+
+
+/* Home Page Navigation Bar Settings, Pushing Down 580 Pixels to Place Main Image Above Navbar and Menu Text to the Right */
+#navbar {
+  position: absolute;
+  top: 580px;
+  left: 0;
+  right: 0;
+  background-color: #002244; /* College Navy */
+  border-top: 5px solid #69BE28; /* Action Green */
+  padding: 12px 24px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navigation Menu Bar Link Settings */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+
+/* Navigation Menu Bar Over/Highlight Settings */
+#navbar a:hover {
+  background-color: #A5ACAF; /* Wolf Grey */
+  text-decoration: underline;
+}

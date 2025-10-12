@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	HTML File for Justin Morrow's CSD-340 Module 6.3 Assignment - 10/11/25
+	https://validator.w3.org/#validate_by_input
+	https://www.w3schools.com/howto/howto_css_hero_image.asp
+-->
+
+<head>
+<!-- Meta Header Tags Copied over from previous assignment -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Bio Site for Justin Morrow">
+  <meta name="robots" content="nofollow">
+  <meta name="author" content="Justin Morrow">
+ 
+<!-- Link for Google Fonts Copied over from previous assignment -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+<!-- Link for my CSS Style Sheet -->  
+  <link href="css/style2.css" type="text/css" rel="stylesheet">
+  
+<!-- My Page Title Seen on Browser Tab-->  
+  <title>CSD 340 Web Development with HTML and CSS | About</title>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contact.html">Contact</a>
+    <a href="interview.html">Interview</a>
+  </div>
+
+  <!-- Main layout container -->
+  <div class="interview-container">
+    <!-- Left column -->
+    <div class="left-column">
+      <h2>Design, built end-to-end.</h2>
+      <p>From foundational identity to full-funnel rollout — I partner with teams to build brands that resonate, scale, and sell.</p>
+      <p>Whether launching something new or evolving something loved, I shape design that delivers across every touchpoint.</p>
+
+      <ul>
+        <li><strong>Brand Identity & Systems:</strong> I develop brand identities built for clarity, consistency, and scale — from logos and typography to full brand systems and guidelines.</li>
+        <li><strong>Campaigns & Launches:</strong> I concept and execute integrated campaigns that drive awareness, engagement, and growth.</li>
+        <li><strong>Web & Digital Design:</strong> I design intuitive websites and landing pages using modern no-code tools when needed.</li>
+        <li><strong>Content & Creative Direction:</strong> From social content to photography and motion, I lead cohesive art direction that feels scroll-stopping.</li>
+        <li><strong>Events & Activations:</strong> I design digital and physical experiences — from booths to branded moments — that build connections.</li>
+      </ul>
+    </div>
+
+    <!-- Right column -->
+    <div class="right-column">
+      <h2>Interview Questions</h2>
+
+      <!-- Repeat this block for each question -->
+      <div class="faq-item">
+        <button class="faq-question">1. Tell me about yourself.</button>
+        <div class="faq-answer">
+          <p>I’m a designer and developer passionate about crafting user-friendly experiences that connect people to technology in meaningful ways...</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. What are your strengths?</button>
+        <div class="faq-answer">
+          <p>I thrive on solving problems creatively, collaborating with teams, and delivering work that is both beautiful and functional...</p>
+        </div>
+      </div>
+
+      <!-- Add up to 10 FAQ items -->
+      <!-- ... -->
+    </div>
+  </div>
+
+  <script>
+    // Simple toggle logic for dropdowns
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>

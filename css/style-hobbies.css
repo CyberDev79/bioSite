@@ -1,0 +1,97 @@
+/* CSS Style Sheet for Justin Morrow's CSD-340 Module 6.2 Assignment - 10/08/25 */
+/* CSS Assignment References: 
+	https://www.w3schools.com/css/
+	https://css-tricks.com/almanac/properties/b/box-shadow/
+	https://www.w3schools.com/css/css_website_layout.asp
+	https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+	https://www.w3schools.com/howto/howto_css_cards.asp
+	https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+	Note: Classes use (.) and IDs use (#)
+	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
+*/
+
+
+/* Default Body Color, Size, Spacing and Font Settings */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+}
+
+
+/* Sticky Navigation Bar for Visibility when Scrolling and Align Menu Items to the Right Side */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #002244; /* College Navy */
+  border-top: 5px solid #69BE28; /* Action Green */
+  padding: 12px 24px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navigation Menu Bar Link Settings */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+
+/* Navigation Menu Bar Over/Highlight Settings */
+#navbar a:hover {
+  background-color: #A5ACAF; /* Wolf Grey */
+  text-decoration: underline;
+}
+
+
+/* Grid Layout for the Main Container */
+#container {
+  margin: 25px auto;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+
+/* H1/Main Heading Tech Settings */
+h1 {
+  text-align: center;
+  color: #002244; /* College Navy */
+  margin-bottom: 25px;
+}
+
+
+/* Hobbies Card Images Grid of 3 Equal Sized Columns */
+.hobbies-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+
+/* Hobbies Card Styling Settings for the 3 Image Boxes */
+.hobbies-card {
+  background-color: white;
+  border: 1px solid #A5ACAF; /* Wolf Grey */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  padding: 25px;
+  text-align: center;
+}
+
+
+/* Default Hobbies Card Settings */
+.hobbies-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Default Hobbies Card Caption Text */
+.hobbies-caption {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #A5ACAF; /* Wolf Grey */
+}
