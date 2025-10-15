@@ -1,4 +1,4 @@
-/* CSS Style Sheet for Justin Morrow's CSD-340 Module 6.2 Assignment - 10/08/25 */
+/* CSS Style Sheet for Justin Morrow's CSD-340 Module 7.2 Assignment - 10/14/25 */
 /* CSS Assignment References: 
 	https://www.w3schools.com/css/
 	https://css-tricks.com/almanac/properties/b/box-shadow/
@@ -8,6 +8,7 @@
 	https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 	Note: Classes use (.) and IDs use (#)
 	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
+	https://jigsaw.w3.org/css-validator/#validate_by_input (Congratulations! No Error Found.)
 */
 
 
@@ -69,6 +70,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
+  padding: 40px;
 }
 
 
@@ -94,4 +96,21 @@ h1 {
   font-style: italic;
   font-size: 0.9em;
   color: #A5ACAF; /* Wolf Grey */
+}
+
+
+/* Organisms you need to include: footer */ 
+footer {
+  border-top: 5px solid #69BE28; /* Action Green */
+  background-color: #002244; /* College Navy */
+  color: white;
+  text-align: center;
+  height: 40px
+}
+
+
+/* Setting the color Footer Click Here link to Seahawks Action Green and Underlined */
+.footer-link {
+  color: #69BE28; /* Action Green */
+  text-decoration: underline;
 }

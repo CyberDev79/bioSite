@@ -8,6 +8,7 @@
 	https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 	Note: Classes use (.) and IDs use (#)
 	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
+	https://jigsaw.w3.org/css-validator/#validate_by_input (Congratulations! No Error Found.)
 */
 
 
@@ -48,8 +49,8 @@ body {
 }
 
 
-/* Contact Page Footer Alignment Settings */
-.footer {
+/* The Main Section of the Contact Page Width and Color Settings */
+.main-section {
   text-align: center;
   padding: 200px;
 }
@@ -70,4 +71,21 @@ body {
 /* Contact Page Email Button Hover Settings */
 .email-button:hover {
   background-color: #69BE28; /* Action Green */
+}
+
+
+/* Organisms you need to include: footer */ 
+footer {
+  border-top: 5px solid #69BE28; /* Action Green */
+  background-color: #002244; /* College Navy */
+  color: white;
+  text-align: center;
+  height: 40px
+}
+
+
+/* Setting the color Footer Click Here link to Seahawks Action Green and Underlined */
+.footer-link {
+  color: #69BE28; /* Action Green */
+  text-decoration: underline;
 }
