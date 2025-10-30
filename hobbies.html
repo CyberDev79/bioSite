@@ -19,35 +19,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  
 <!-- Link for my CSS Style Sheet -->  
-	<link href="css/style-hobbies.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
   
 <!-- My Page Title Seen on Browser Tab-->  
 	<title>CSD 340 Web Development with HTML and CSS | About</title>
 </head>
 
 <body>
-	<div id="navbar">
+	<div id="navbar" class="navbar-top">
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
 		<a href="hobbies.html">Hobbies</a>
 		<a href="contact.html">Contact</a>
 	</div>
 
-	<div id="container">
-		<h1>My Hobbies</h1>
-    
+	<div id="hobbies-container">
+		<h1>My Hobbies</h1>  
 		<div class="hobbies-images">
 			<div class="hobbies-card">
-			<img src="images/costa-rica.jpg" alt="Hobby 1">
+			<img src="images/costa-rica.jpg" alt="Justin zip lining in Costa Rica for a family vacation.">
 			<p class="hobbies-caption">Exploring Costa Rica with family for Justin and his wifes 20th wedding anniversary deepened his appreciation for culture, nature, and family time. The Costa Ricans refer to this as "Pura Vida"!</p>
 		</div>
 		<div class="hobbies-card">
-			<img src="images/xbox.jpg" alt="Hobby 2">
+			<img src="images/xbox.jpg" alt="Justin and son playing Xbox game NBA 2K">
 			<p class="hobbies-caption">Justin enjoys bonding with his son through gaming on the Xbox playing 2 player co-op games like (Call of Duty, Cup Head, Madden, NBA 2K, Beach Buggy and Rocket League).</p>
 		</div>
 		<div class="hobbies-card">
-			<img src="images/seahawks.jpg" alt="Hobby 3">
-			<p class="hobbies-caption">Justin has been a huge Seattle Seahawks fan since 2000. He enjoys watching the games on TV and with his family at Lumen Field when possible.</p>
+			<div class="flip-container">
+				<div class="card">
+					<div class="front">
+						<img src="images/seahawks-2013.jpg" alt="Seahwaks vs 49ers 2013">
+						<div class="overlay-text">Seahawks vs 49ers 2013</div>
+					</div>
+					<div class="back">
+						<img src="images/seahawks-2025.jpg" alt="Seahawks vs Texans 2025">
+						<div class="overlay-text">Seahawks vs Texans 2025</div>
+					</div>
+				</div>
+			</div>
+			<p class="hobbies-caption">Justin has been a huge Seattle Seahawks fan since 2000. He enjoys watching the games on TV and with his family at Lumen Field when possible. Mouse over the image to see it flip between 2013 and 2025.</p>
 		</div>
     </div>
 	<footer>
