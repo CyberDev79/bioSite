@@ -1,4 +1,4 @@
-/* CSS Style Sheet for Justin Morrow's CSD-340 Module 9.2 Assignment - 10/29/25 */
+/* CSS Style Sheet for Justin Morrow's CSD-340 Module 9.2/10.2 Assignment - Updated on 11/08/25 */
 /* CSS Assignment References: 
 	https://www.w3schools.com/css/
 	https://css-tricks.com/almanac/properties/b/box-shadow/
@@ -6,9 +6,11 @@
 	https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 	https://www.w3schools.com/howto/howto_css_cards.asp
 	https://www.w3schools.com/howto/howto_css_flip_card.asp
+	https://www.w3schools.com/Css/css_rwd_mediaqueries.asp
+	https://www.w3schools.com/cssref/atrule_media.php
 	Note: Classes use (.) and IDs use (#)
 	Seahawks colors: https://teamcolorcodes.com/seattle-seahawks-color-codes/
-	https://jigsaw.w3.org/css-validator/#validate_by_input (Congratulations! No Error Found.)
+	https://jigsaw.w3.org/css-validator/#validate_by_input (Congratulations! No Error Found 11/08/25.)
 	Note: This is a consolidated CSS sheet since I previously had a different CSS sheet for each HTML page
 */
 
@@ -197,28 +199,6 @@ figcaption {
 	margin-top: 5px;
 }
 
-/* Contact.html Default Container Settings */
-#contact-container {
-	text-align: center;
-	padding: 200px;
-}
-
-/* Contact.html Email Button Seahawks Colors*/
-.email-button {
-	display: inline-block;
-	background-color: #002244; /* College Navy */
-	color: white;
-	border: 2px solid #69BE28; /* Action Green */
-	padding: 20px 40px;
-	text-decoration: none;
-	font-weight: 600;
-}
-
-/* Contact.html Email Button Hover Settings */
-.email-button:hover {
-	background-color: #69BE28; /* Action Green */
-}
-
 
 /* Hobbies.html Default Container Settings */
 #hobbies-container {
@@ -286,10 +266,12 @@ h1 {
 	position: relative;
 }
 
+
 .flip-container:hover > .card {
 	cursor: pointer;
 	transform: rotateY(180deg);
 }
+
 
 .flip-container .card {
 	width: 100%;
@@ -297,6 +279,7 @@ h1 {
 	transform-style: preserve-3d;
 	display: block;
 }
+
 
 .flip-container .front,
 .flip-container .back {
@@ -306,6 +289,7 @@ h1 {
 	border-radius: 0;
 }
 
+
 .flip-container .front img,
 .flip-container .back img {
 	width: 100%;
@@ -313,13 +297,15 @@ h1 {
 	display: block;
 }
 
+
 .flip-container .back {
 	transform: rotateY(180deg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: abosolute;
+	position: absolute;
 }
+
 
 /* Text overlayed on the bottom of both Seahawk images */
 .flip-container .overlay-text {
@@ -332,6 +318,30 @@ h1 {
 	text-shadow: 0 2px 5px rgba(0,0,0,1);
 }
 
+
+/* Contact.html Default Container Settings */
+#contact-container {
+	text-align: center;
+	padding: 200px;
+}
+
+
+/* Contact.html Email Button Seahawks Colors*/
+.email-button {
+	display: inline-block;
+	background-color: #002244; /* College Navy */
+	color: white;
+	border: 2px solid #69BE28; /* Action Green */
+	padding: 20px 40px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+
+/* Contact.html Email Button Hover Settings */
+.email-button:hover {
+	background-color: #69BE28; /* Action Green */
+}
 
 
 /* Footer for all pages excluding index.html */ 
@@ -348,4 +358,126 @@ footer {
 .footer-link {
 	color: #69BE28; /* Action Green */
 	text-decoration: underline;
+}
+
+
+/* New Mobile Friendly Section added from Peer Review Comment by Jazzmon:
+ * Add adjustments to ensure the site displays properly on smaller screens, especially below 600px, with layouts stacking rather than side-by-side.
+ * References W3Schools - Responsive Web Design Media Queries and CSS @media Rule
+ * https://www.w3schools.com/Css/css_rwd_mediaqueries.asp
+ * https://www.w3schools.com/cssref/atrule_media.php
+ * https://www.geeksforgeeks.org/css/css-rules-in-web-design-for-mobile-screens/
+ * Tested the below settings using Google Chrome Browser Developer Options (F12) and selecting the iPhone 14 Pro Max since that's the phone I use.
+ * I thought this would be a quick setting. This took hours to tweak for looking good, it's not perfect (As seen over 530px), but looks much better for Mobile devices than it was previously.
+*/
+@media screen and (max-width: 600px) {
+
+	/* Default Body: Adjusted Padding */
+	body {
+		padding: 0 10px;
+  }
+
+
+	/* The Main Section: Removed the float, centered the text and lowered the top padding */
+	.main-section {
+		float: none;
+		text-align: center;
+		padding-top: 0;
+	}
+
+
+	/* Main Image: Removed the float, set the display to block for centering as well as the margin/width/height settings */
+	.main-image {
+		float: none;
+		display: block;
+		margin: 0 auto 20px auto;
+		width: 100%;
+		height: auto;
+	}
+
+	
+	/* Main Text: Removed the float, aligned text for centering and adjusted padding */
+	.main-text {
+		float: none;
+		text-align: center;
+		padding-top: 20px;
+		padding-left: 0;
+	}
+
+
+	/* Main H1: Reduced by 50% */
+	.main-text h1 {
+		font-size: 24px;
+	}
+
+
+	/* Main H2: Reduced by 50% */
+	.main-text h2 {
+		font-size: 12px;
+		
+	}
+
+
+	/* Home Page Navigation Bar: Centered the text */
+	.navbar-bottom {
+		text-align: center;
+	}
+
+	
+	/* Home Page Navivation Bar: Set the item links to blocks for easier tapping and set the vertical padding */
+	.navbar-bottom a {
+		display: block;
+		padding: 10px 0;
+	}
+
+
+	/* Other Pages Sticky Navigation Top Bar: Centered the text */
+	.navbar-top {
+		text-align: center;
+	}
+
+
+	/* Other Pages Sticky Navigation Top Bar: Set the item links to blocks for easier tapping and set the vertical padding */
+	.navbar-top a {
+		display: block;
+		padding: 10px 0;
+	}
+
+
+	/* About.html Container: Stacked the columns for scrolling vertically */
+	#about-container {
+		display: block;
+	}
+
+
+	/* About.html Left Images: Changed from 3 column (1fr 1fr 1fr) to 1 column (1fr) Grid for scrolling vertically */
+	.left-images {
+		grid-template-columns: 1fr;
+	}
+
+
+	/* Hobbies.html Images: Changed from 3 column (1fr 1fr 1fr) to 1 column (1fr) Grid for scrolling vertically */
+	.hobbies-images {
+		grid-template-columns: 1fr;
+	}
+
+
+	/* Contact.html Container: Reduced the padding from 200px to 75px */
+	#contact-container {
+		padding: 75px;
+	}
+
+
+	/* Contact.html Email Button: Reduced the width to 50% */
+	.email-button {
+		width: 50%;
+	}
+
+
+	/* Footer: Adjusted the height, padding and font size to display better */
+	footer {
+		height: auto;
+		padding: 10px;
+		font-size: 12px;
+	}
 }
